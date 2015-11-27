@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37009" started-at="2015-11-22T03:57:10Z" finished-at="2015-11-22T03:57:47Z">
+  <suite name="Default suite" duration-ms="34646" started-at="2015-11-27T04:13:17Z" finished-at="2015-11-27T04:13:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37009" started-at="2015-11-22T03:57:10Z" finished-at="2015-11-22T03:57:47Z">
+    <test name="Default test" duration-ms="34646" started-at="2015-11-27T04:13:17Z" finished-at="2015-11-27T04:13:52Z">
       <class name="test.LoginTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.LoginTest@4411d970]" name="beforeTest" is-config="true" duration-ms="9503" started-at="2015-11-21T22:57:10Z" finished-at="2015-11-21T22:57:19Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.LoginTest@4411d970]" name="beforeTest" is-config="true" duration-ms="11787" started-at="2015-11-26T23:13:17Z" finished-at="2015-11-26T23:13:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="Successful()[pri:0, instance:test.LoginTest@4411d970]" name="Successful" duration-ms="7561" started-at="2015-11-21T22:57:19Z" finished-at="2015-11-21T22:57:27Z">
+        <test-method status="PASS" signature="Successful()[pri:0, instance:test.LoginTest@4411d970]" name="Successful" duration-ms="7506" started-at="2015-11-26T23:13:29Z" finished-at="2015-11-26T23:13:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Successful -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.LoginTest@4411d970]" name="beforeTest" is-config="true" duration-ms="10917" started-at="2015-11-21T22:57:27Z" finished-at="2015-11-21T22:57:38Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.LoginTest@4411d970]" name="beforeTest" is-config="true" duration-ms="9808" started-at="2015-11-26T23:13:36Z" finished-at="2015-11-26T23:13:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="Unsuccessful()[pri:0, instance:test.LoginTest@4411d970]" name="Unsuccessful" duration-ms="9026" started-at="2015-11-21T22:57:38Z" finished-at="2015-11-21T22:57:47Z">
+        <test-method status="PASS" signature="Unsuccessful()[pri:0, instance:test.LoginTest@4411d970]" name="Unsuccessful" duration-ms="5524" started-at="2015-11-26T23:13:46Z" finished-at="2015-11-26T23:13:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Unsuccessful -->

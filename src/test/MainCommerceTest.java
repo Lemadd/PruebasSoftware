@@ -55,7 +55,7 @@ public class MainCommerceTest {
 		System.out.println("Ejecutando Test Case: " + idCase);
 		//loginPage.enterLogIn(Constants.USERPAGE, Constants.PASSWORDPAGE);
 		if (idCase.equalsIgnoreCase("TC001")) {
-			dashboardPage.GoToCustomersPage();
+			//dashboardPage.GoToCustomersPage();
 			customersPage.AddNewCustomerButton();
 			addcustomerPage.NuevoCustomer(email,
 										password,
@@ -72,7 +72,7 @@ public class MainCommerceTest {
 			System.out.println("Usuario " + email +" Creado exitosamente");
 		
 		}else if (idCase.equalsIgnoreCase("TC002")) {
-			dashboardPage.GoToCustomersPage();
+			//dashboardPage.GoToCustomersPage();
 			customersPage.AddNewCustomerButton();
 			addcustomerPage.NuevoCustomer(email,
 										password,

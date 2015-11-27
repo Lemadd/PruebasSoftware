@@ -32,6 +32,7 @@ public class LoggedPage extends MainLogger {
 	
 	public LoggedPage(WebDriver webdriver){
 		PageFactory.initElements(webdriver, this);
+		LOGGER.info(this.getClass().getSimpleName());
 	}
 	
 	public void ClickOnHome(){

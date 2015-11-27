@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import pageObject.DashboardPage;
 import pageObject.LoginPage;
 import pageObject.MainPage;
 import util.Constants;
@@ -19,6 +20,8 @@ public class LoginTest {
 	private WebDriver driver;
 	MainPage mainpage;
 	LoginPage loginpage;
+	DashboardPage dashboardpage;
+	
 	@BeforeMethod
 	public void beforeTest(){
 		driver = new FirefoxDriver();
@@ -27,12 +30,16 @@ public class LoginTest {
 		driver.get(Constants.URLMAIN);
 		mainpage = new MainPage(driver);
 		loginpage = new LoginPage(driver);
+		dashboardpage = new DashboardPage(driver);
 	}
+	
 	@Test
   	public void Successful() {
 		mainpage.clickOnLink();
 		loginpage.SignIn(Constants.USERPAGE, Constants.PASSWORDPAGE);
+		AssertJUnit.assertTrue(dashboardpage.VerifySuccessfulLogin());
   	}
+	
   	@Test
   	public void Unsuccessful() {
 		mainpage.clickOnLink();

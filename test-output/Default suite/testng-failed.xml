@@ -5,7 +5,7 @@
     <classes>
       <class name="test.LoginTest">
         <methods>
-          <include name="Unsuccessful"/>
+          <include name="Successful"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- test.LoginTest -->

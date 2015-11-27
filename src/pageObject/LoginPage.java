@@ -1,6 +1,7 @@
 package pageObject;
 
-import logger.UseLogger;
+import logger.MainLogger;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import util.Constants;
 
-public class LoginPage extends UseLogger{
+public class LoginPage extends MainLogger{
 
 	@FindBy(id="username")
 	private WebElement txtUserName;
@@ -24,6 +25,7 @@ public class LoginPage extends UseLogger{
 	
 	public LoginPage(WebDriver webDriver) {
 		PageFactory.initElements(webDriver, this);
+		LOGGER.info(this.getClass().getSimpleName());
 	}
 	
 	public void WriteUserName(String userName){

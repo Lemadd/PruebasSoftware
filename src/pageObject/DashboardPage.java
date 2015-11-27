@@ -1,5 +1,7 @@
 package pageObject;
 
+import logger.MainLogger;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
@@ -9,42 +11,23 @@ import org.openqa.selenium.support.PageFactory;
 
 import test.MainCommerceTest;
 
-public class DashboardPage {
+public class DashboardPage extends MainLogger{
 
-	private MainCommerceTest commerceTest;
-	
-	@FindBy(className="login-info")
-	private WebElement lblLoggedIn;
-	
-	@FindBy(xpath=".//*[@id='admin-menu']/li[4]")
-	private WebElement btnCustomers;
-	
-	@FindBy(linkText="Customers")
-	private WebElement opCustomers;
-	
-	Actions builder;
+	@FindBy(id="loggedas")
+	private WebElement lblLoggedAs;
 	
 	public DashboardPage(WebDriver webDriver) {
 		PageFactory.initElements(webDriver, this);
-		builder= new Actions(webDriver);
+		LOGGER.info(this.getClass().getSimpleName());
 	}
 	
-	public void GoToCustomersPage() {		
-	    Action mouseOverHome = builder
-	                .moveToElement(btnCustomers)
-	                .build();
-	    mouseOverHome.perform();
-		opCustomers.click();
-	}
-	
-	
-	public boolean checkLoggedIn () {
-		String elementText = lblLoggedIn.getText();
-		if (elementText.contains("Logged in as:")){
-			System.out.println("Ingreso al sistema");
+	public boolean VerifySuccessfulLogin () {
+		String elementText = lblLoggedAs.getText();
+		if (elementText.contains("Conectado como")){
+			LOGGER.info("Ingreso a la pagina correctament");
 			return true;
 		} else {
-			System.err.println("Error al ingresar al sistema");
+			LOGGER.severe("Ocurrio un erro al intentar Loguearse");
 			return false;
 		}
 	}
