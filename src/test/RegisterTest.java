@@ -58,6 +58,9 @@ public class RegisterTest extends MainLogger{
 								   country,
 								   company,
 								   website);
+		if (condition) {
+			
+		}
   	}
 	
 	
