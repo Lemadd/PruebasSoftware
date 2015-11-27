@@ -6,7 +6,7 @@
       <class name="test.RegisterTest">
         <methods>
           <include name="beforeTest"/>
-          <include name="Successful"/>
+          <include name="Successful" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- test.RegisterTest -->
     </classes>

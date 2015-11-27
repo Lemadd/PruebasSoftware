@@ -40,6 +40,9 @@ public class RegisterPage extends MainLogger{
 	@FindBy(id="user_custom_field_values_4")
 	private WebElement txtWebsite;
 	
+	@FindBy(name="commit")
+	private WebElement btnSave;
+	
 	public RegisterPage(WebDriver webDriver){
 		PageFactory.initElements(webDriver, this);
 		LOGGER.info(this.getClass().getSimpleName());
@@ -65,6 +68,7 @@ public class RegisterPage extends MainLogger{
 		WriteLastName(language);
 		WriteCountry(country);
 		WriteWebSite(website);
+		clickOnSave();
 	}
 	
 	public void WriteUserName(String username){
@@ -83,30 +87,41 @@ public class RegisterPage extends MainLogger{
 	}
 	
 	public void WriteFirstName(String firstname) {
+		LOGGER.info("WriteFirstName : "+firstname);
 		txtFirstName.sendKeys(firstname);
 	}
 	
 	public void WriteLastName(String lastname){
+		LOGGER.info("WriteLastName : "+lastname);
 		txtLastName.sendKeys(lastname);
 	}
 	
 	public void WriteEmail(String email){
+		LOGGER.info("WriteEmail : "+email);
 		txtEmail.sendKeys(email);
 	}
 	
 	public void SelectOptionOnLanguage(String language){
-		cboLanguage.selectByVisibleText(language);;
+		LOGGER.info("SelectOptionOnLanguage : "+language);
+		cboLanguage.selectByVisibleText(language);
 	}
 	
 	public void WriteCountry(String country){
+		LOGGER.info("WriteCountry : "+country);
 		txtCountry.sendKeys(country);
 	}
 	
 	public void WriteCompany(String company){
-		txtCompany.sendKeys(company);
+		LOGGER.info("WriteCompany : "+company);
+		txtCompany.sendKeys(company +this);
 	}
 	
 	public void WriteWebSite(String website){
+		LOGGER.info("WriteWebSite : "+website);
 		txtWebsite.sendKeys(website);
+	}
+	
+	public void clickOnSave(){
+		btnSave.click();
 	}
 }
