@@ -7,16 +7,18 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import logger.MainLogger;
 import util.Constants;
 
-public class MySqlDataManager {
+public class MySqlDataManager extends MainLogger{
 	
 	Connection conn = null;
 	
 	public String [][] getMySqlTable(String table) throws ClassNotFoundException {
 		try {
-		String[][] tableArray;
-		Class.forName(Constants.DB_DRIVER);
+			LOGGER.info("Executing getObjectMysql");
+			String[][] tableArray;
+			Class.forName(Constants.DB_DRIVER);
 		
 			conn = DriverManager.getConnection(Constants.DB_URL+ 
 					Constants.DB_NAME, Constants.DB_USER, Constants.DB_PWD);
@@ -44,11 +46,11 @@ public class MySqlDataManager {
 			
 			stmt.close();
 			conn.close();
-			
+			LOGGER.info("Conection Successful");
 			return tableArray;
 					
 		} catch (SQLException e) {
-			System.err.println("Error mysql" + e.getMessage());
+			LOGGER.severe("Error mysql" +e.getMessage());
 			return null;
 		}
 		

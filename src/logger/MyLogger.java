@@ -27,13 +27,13 @@ public class MyLogger {
 	    }*/
 
 	    logger.setLevel(Level.INFO);
-	    fileTxt = new FileHandler("Logging.txt");
+	    //fileTxt = new FileHandler("Logging.txt");
 	    fileHTML = new FileHandler("Logging.html");
 
 	    // create a TXT formatter
-	    formatterTxt = new SimpleFormatter();
-	    fileTxt.setFormatter(formatterTxt);
-	    logger.addHandler(fileTxt);
+	    //formatterTxt = new SimpleFormatter();
+	    //fileTxt.setFormatter(formatterTxt);
+	    //logger.addHandler(fileTxt);
 
 	    // create an HTML formatter
 	    formatterHTML = new MyHtmlFormatter();

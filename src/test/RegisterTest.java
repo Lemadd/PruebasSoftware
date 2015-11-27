@@ -58,7 +58,13 @@ public class RegisterTest extends MainLogger{
 								   country,
 								   company,
 								   website);
-		if (condition) {
+		if (username.equalsIgnoreCase("novalido")) {
+			
+		}else if (username.equalsIgnoreCase("novalido")) {
+			
+		}else if (username.equalsIgnoreCase("novalido")) {
+			
+		}else if (username.equalsIgnoreCase("novalido")) {
 			
 		}
   	}
