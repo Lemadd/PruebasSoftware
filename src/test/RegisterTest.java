@@ -2,25 +2,23 @@ package test;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Before;
-import org.junit.Ignore;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.AssertJUnit;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import pageObject.DashboardPage;
 import pageObject.LoginPage;
 import pageObject.MainPage;
+import pageObject.RegisterPage;
 import util.Constants;
 
-public class LoginTest {
+public class RegisterTest {
 	private WebDriver driver;
 	MainPage mainpage;
 	LoginPage loginpage;
-	DashboardPage dashboardpage;
+	RegisterPage registerpage;
 	
 	@BeforeMethod
 	public void beforeTest(){
@@ -30,21 +28,22 @@ public class LoginTest {
 		driver.get(Constants.URLMAIN);
 		mainpage = new MainPage(driver);
 		loginpage = new LoginPage(driver);
-		dashboardpage = new DashboardPage(driver);
+		registerpage = new RegisterPage(driver);
 	}
 	
 	@Test
   	public void Successful() {
-		mainpage.clickOnSignOn();
-		loginpage.SignIn(Constants.USERPAGE, Constants.PASSWORDPAGE);
-		AssertJUnit.assertTrue(dashboardpage.VerifySuccessfulLogin());
+		mainpage.ClickOnRegister();
+		registerpage.InsertNewUser("cibertecpruebs",
+									"cibertecpruebs",
+									"cibertecpruebs",
+									"cibertecpruebs",
+									"cibertecpruebs",
+									"cibertecpruebs@cibertecpruebs.com",
+									"English",
+									"cibertecpruebs",
+									"cibertecpruebs",
+									"cibertecpruebs");
   	}
 	
-  	@Test
-  	public void Unsuccessful() {
-		mainpage.clickOnSignOn();
-		loginpage.SignIn("asdasdsa", "asdasd");
-		AssertJUnit.assertTrue(loginpage.VerifyErrorMessage());
-  	}
-  
 }

@@ -8,15 +8,24 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class MainPage extends MainLogger{
+	
 	@FindBy(className="login")
 	private WebElement linkLogin;
 	
+	@FindBy(className="register")
+	private WebElement linkregister;
+	
 	public MainPage(WebDriver webDriver) {
 		PageFactory.initElements(webDriver, this);
+		LOGGER.info(this.getClass().getSimpleName());
 	}
 	
-	public void clickOnLink(){
-		LOGGER.info("Click en SignOn");
+	public void ClickOnRegister(){
+		LOGGER.info("ClickOnRegister");
+		linkregister.click();
+	}
+	public void clickOnSignOn(){
+		LOGGER.info("clickOnSignOn");
 		linkLogin.click();
 	}
 }
