@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="37009" started-at="2015-11-22T03:57:10Z" finished-at="2015-11-22T03:57:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="37009" started-at="2015-11-22T03:57:10Z" finished-at="2015-11-22T03:57:47Z">
+      <class name="test.LoginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.LoginTest@4411d970]" name="beforeTest" is-config="true" duration-ms="9503" started-at="2015-11-21T22:57:10Z" finished-at="2015-11-21T22:57:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="Successful()[pri:0, instance:test.LoginTest@4411d970]" name="Successful" duration-ms="7561" started-at="2015-11-21T22:57:19Z" finished-at="2015-11-21T22:57:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Successful -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.LoginTest@4411d970]" name="beforeTest" is-config="true" duration-ms="10917" started-at="2015-11-21T22:57:27Z" finished-at="2015-11-21T22:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="Unsuccessful()[pri:0, instance:test.LoginTest@4411d970]" name="Unsuccessful" duration-ms="9026" started-at="2015-11-21T22:57:38Z" finished-at="2015-11-21T22:57:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Unsuccessful -->
+      </class> <!-- test.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
