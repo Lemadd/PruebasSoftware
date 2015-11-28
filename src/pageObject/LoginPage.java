@@ -56,7 +56,6 @@ public class LoginPage extends MainLogger{
 		String errorMessageText;
 		try {
 			LOGGER.info("VerifyErrorMessageMethod");
-			//errorMessage.findElement(By.className(("flash error")));
 			errorMessageText=errorMessage.getText();
 			if (errorMessageText.equalsIgnoreCase(Constants.LOGIN_ERROR_ES)) {
 				return true;

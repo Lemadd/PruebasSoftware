@@ -35,8 +35,8 @@ public class RegisterTest extends MainLogger{
 		registerpage = new RegisterPage(driver);
 	}
 
-	@Test(dataProvider="registerPage")
-  	public void Successful(String idTestCase,
+	@Test(dataProvider="registerpage")
+  	public void Test(String idTestCase,
   						   String username,
   						   String password,
   						   String confirmPassword,
@@ -47,6 +47,7 @@ public class RegisterTest extends MainLogger{
   						   String country,
   						   String company,
   						   String website) {
+		LOGGER.info("Executing TestCase " +idTestCase);
 		mainpage.ClickOnRegister();
 		registerpage.InsertNewUser(username,
 								   password,
@@ -59,20 +60,21 @@ public class RegisterTest extends MainLogger{
 								   company,
 								   website);
 		if (username.equalsIgnoreCase("novalido")) {
-			
+			registerpage.VerifyErrorMessage();
 		}else if (username.equalsIgnoreCase("novalido")) {
-			
+			registerpage.VerifyErrorMessage();
 		}else if (username.equalsIgnoreCase("novalido")) {
-			
+			registerpage.VerifyErrorMessage();
 		}else if (username.equalsIgnoreCase("novalido")) {
-			
+			registerpage.VerifyErrorMessage();
 		}
   	}
 	
 	
-	@DataProvider(name="registerPage")
+	@DataProvider(name="registerpage")
 	public Object[][] sendDataMySqlCustomers() {
 		try {
+			LOGGER.info("The datadriver couldn't load correctly");
 			MySqlDataManager mySqlDataManager = new MySqlDataManager();
 			Object[][] arrData = mySqlDataManager.getMySqlTable("registerpage");
 			return arrData;

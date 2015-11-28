@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="none">
+<suite name="Suite" parallel="true">
   <listeners>
 	  <listener class-name="org.uncommons.reportng.HTMLReporter"/>
 	  <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test name="Test">
+  <test name="test">
     <classes>
-      <class name="test.NopCommerceTest"/>
+      <class name="test"/>
     </classes>
     <package name="test" />
   </test> <!-- Test -->

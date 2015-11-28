@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import util.Constants;
 import logger.MainLogger;
 
 public class RegisterPage extends MainLogger{
@@ -43,6 +44,9 @@ public class RegisterPage extends MainLogger{
 	@FindBy(name="commit")
 	private WebElement btnSave;
 	
+	@FindBy(id="errorExplanation")
+	private WebElement errorMessage;
+	
 	public RegisterPage(WebDriver webDriver){
 		PageFactory.initElements(webDriver, this);
 		LOGGER.info(this.getClass().getSimpleName());
@@ -72,56 +76,135 @@ public class RegisterPage extends MainLogger{
 	}
 	
 	public void WriteUserName(String username){
-		LOGGER.info("WriteUserName : "+username);
-		txtUserName.sendKeys(username);
+		if (username.equalsIgnoreCase("novalido")) {
+			username="";
+			LOGGER.info("WriteUserName : "+username);
+			txtUserName.sendKeys(username);
+		}else {
+			LOGGER.info("WriteUserName : "+username);
+			txtUserName.sendKeys(username);
+		}
 	}
 	
 	public void WritePassword(String password){
-		LOGGER.info("WriteUserName : "+password);
-		txtPassword.sendKeys(password);
+		if (password.equalsIgnoreCase("novalido")) {
+			password="";
+			LOGGER.info("WriteUserName : "+password);
+			txtPassword.sendKeys(password);
+		}else {
+			LOGGER.info("WriteUserName : "+password);
+			txtPassword.sendKeys(password);;
+		}
 	}
 	
 	public void WritePasswordConfirmation(String password){
-		LOGGER.info("WritePasswordConfirmation : "+password);
-		txtPasswordConfirmation.sendKeys(password);
+		if (password.equalsIgnoreCase("novalido")) {
+			password="";
+			LOGGER.info("WritePasswordConfirmation : "+password);
+			txtPasswordConfirmation.sendKeys(password);
+		}else {
+			LOGGER.info("WritePasswordConfirmation : "+password);
+			txtPasswordConfirmation.sendKeys(password);
+		}
 	}
 	
 	public void WriteFirstName(String firstname) {
-		LOGGER.info("WriteFirstName : "+firstname);
-		txtFirstName.sendKeys(firstname);
+		if (firstname.equalsIgnoreCase("novalido")) {
+			firstname="";
+			LOGGER.info("WriteFirstName : "+firstname);
+			txtFirstName.sendKeys(firstname);
+		}else {
+			LOGGER.info("WriteFirstName : "+firstname);
+			txtFirstName.sendKeys(firstname);
+		}
 	}
 	
 	public void WriteLastName(String lastname){
-		LOGGER.info("WriteLastName : "+lastname);
-		txtLastName.sendKeys(lastname);
+		if (lastname.equalsIgnoreCase("novalido")) {
+			lastname="";
+			LOGGER.info("WriteLastName : "+lastname);
+			txtLastName.sendKeys(lastname);
+		}else {
+			LOGGER.info("WriteLastName : "+lastname);
+			txtLastName.sendKeys(lastname);
+		}
 	}
 	
 	public void WriteEmail(String email){
-		LOGGER.info("WriteEmail : "+email);
-		txtEmail.sendKeys(email);
+		if (email.equalsIgnoreCase("novalido")) {
+			email="";
+			LOGGER.info("WriteEmail : "+email);
+			txtEmail.sendKeys(email);
+		}else {
+			LOGGER.info("WriteEmail : "+email);
+			txtEmail.sendKeys(email);
+		}
 	}
 	
 	public void SelectOptionOnLanguage(String language){
-		LOGGER.info("SelectOptionOnLanguage : "+language);
-		cboLanguage.selectByVisibleText(language);
+		if (language.equalsIgnoreCase("novalido")) {
+			language="";
+			LOGGER.info("SelectOptionOnLanguage : "+language);
+			cboLanguage.selectByVisibleText(language);
+		}else {
+
+			LOGGER.info("SelectOptionOnLanguage : "+language);
+			cboLanguage.selectByVisibleText(language);
+		}
 	}
 	
 	public void WriteCountry(String country){
-		LOGGER.info("WriteCountry : "+country);
-		txtCountry.sendKeys(country);
+		if (country.equalsIgnoreCase("novalido")) {
+			country="";
+			LOGGER.info("WriteCountry : "+country);
+			txtCountry.sendKeys(country);
+		}else {
+			LOGGER.info("WriteCountry : "+country);
+			txtCountry.sendKeys(country);
+		}
 	}
 	
 	public void WriteCompany(String company){
-		LOGGER.info("WriteCompany : "+company);
-		txtCompany.sendKeys(company +this);
+		if (company.equalsIgnoreCase("novalido")) {
+			company="";
+			LOGGER.info("WriteCompany : "+company);
+			txtCompany.sendKeys(company +this);
+		}else {
+			LOGGER.info("WriteCompany : "+company);
+			txtCompany.sendKeys(company +this);
+		}
 	}
 	
 	public void WriteWebSite(String website){
-		LOGGER.info("WriteWebSite : "+website);
-		txtWebsite.sendKeys(website);
+		if (website.equalsIgnoreCase("novalido")) {
+			website="";
+			LOGGER.info("WriteWebSite : "+website);
+			txtWebsite.sendKeys(website);
+		}else {
+			LOGGER.info("WriteWebSite : "+website);
+			txtWebsite.sendKeys(website);
+		}
 	}
 	
 	public void clickOnSave(){
 		btnSave.click();
 	}
+	
+	/*
+	 * Methods to verify error messages
+	 */
+	public boolean VerifyErrorMessage(){
+		try {
+			LOGGER.info("VerifyErrorMessageMethod");
+			if (errorMessage.isDisplayed()) {
+				return true;
+			}else {
+				return false;
+			}
+		} catch (Exception e) {
+			LOGGER.severe("An error happen when trying to find the error message" );
+			return false;
+		}
+	}
+	
 }
