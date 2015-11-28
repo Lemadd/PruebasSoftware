@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34834" started-at="2015-11-28T01:02:06Z" finished-at="2015-11-28T01:02:41Z">
+  <suite name="Default suite" duration-ms="34813" started-at="2015-11-28T01:12:44Z" finished-at="2015-11-28T01:13:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34834" started-at="2015-11-28T01:02:06Z" finished-at="2015-11-28T01:02:41Z">
+    <test name="Default test" duration-ms="34813" started-at="2015-11-28T01:12:44Z" finished-at="2015-11-28T01:13:19Z">
       <class name="test.LoginTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.LoginTest@22f71333]" name="beforeTest" is-config="true" duration-ms="10785" started-at="2015-11-27T20:02:06Z" finished-at="2015-11-27T20:02:17Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.LoginTest@22f71333]" name="beforeTest" is-config="true" duration-ms="11416" started-at="2015-11-27T20:12:45Z" finished-at="2015-11-27T20:12:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="Successful(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.LoginTest@22f71333]" name="Successful" duration-ms="7792" started-at="2015-11-27T20:02:17Z" data-provider="loginpage" finished-at="2015-11-27T20:02:25Z">
+        <test-method status="PASS" signature="Successful(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.LoginTest@22f71333]" name="Successful" duration-ms="6236" started-at="2015-11-27T20:12:56Z" data-provider="loginpage" finished-at="2015-11-27T20:13:02Z">
           <params>
             <param index="0">
               <value>
@@ -32,15 +32,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Successful -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.LoginTest@22f71333]" name="afterTest" is-config="true" duration-ms="454" started-at="2015-11-27T20:02:25Z" finished-at="2015-11-27T20:02:25Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.LoginTest@22f71333]" name="afterTest" is-config="true" duration-ms="578" started-at="2015-11-27T20:13:02Z" finished-at="2015-11-27T20:13:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.LoginTest@22f71333]" name="beforeTest" is-config="true" duration-ms="10774" started-at="2015-11-27T20:02:25Z" finished-at="2015-11-27T20:02:36Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.LoginTest@22f71333]" name="beforeTest" is-config="true" duration-ms="11356" started-at="2015-11-27T20:13:03Z" finished-at="2015-11-27T20:13:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="Successful(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.LoginTest@22f71333]" name="Successful" duration-ms="4413" started-at="2015-11-27T20:02:36Z" data-provider="loginpage" finished-at="2015-11-27T20:02:40Z">
+        <test-method status="PASS" signature="Successful(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.LoginTest@22f71333]" name="Successful" duration-ms="4602" started-at="2015-11-27T20:13:14Z" data-provider="loginpage" finished-at="2015-11-27T20:13:19Z">
           <params>
             <param index="0">
               <value>
@@ -61,7 +61,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Successful -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.LoginTest@22f71333]" name="afterTest" is-config="true" duration-ms="361" started-at="2015-11-27T20:02:40Z" finished-at="2015-11-27T20:02:41Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.LoginTest@22f71333]" name="afterTest" is-config="true" duration-ms="366" started-at="2015-11-27T20:13:19Z" finished-at="2015-11-27T20:13:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

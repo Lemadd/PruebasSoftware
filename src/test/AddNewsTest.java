@@ -34,8 +34,8 @@ public class AddNewsTest extends MainLogger {
 		loginpage = new LoginPage(driver);
 		dashboardpage = new DashboardPage(driver);
 	}
-	@Test
-  	public void Successful() {
+	@Test(dataProvider="addnewspage")
+  	public void test(String testId, String summary, String description) {
 		
 	}
 	@DataProvider(name="addnewspage")
