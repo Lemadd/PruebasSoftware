@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="7" failed="1" total="8" passed="0">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="51280" started-at="2015-11-28T00:15:47Z" finished-at="2015-11-28T00:16:39Z">
+  <suite name="Default suite" duration-ms="34834" started-at="2015-11-28T01:02:06Z" finished-at="2015-11-28T01:02:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="51280" started-at="2015-11-28T00:15:47Z" finished-at="2015-11-28T00:16:39Z">
-      <class name="test.RegisterTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.RegisterTest@6cd8737]" name="beforeTest" is-config="true" duration-ms="4386" started-at="2015-11-27T19:15:47Z" finished-at="2015-11-27T19:15:52Z">
+    <test name="Default test" duration-ms="34834" started-at="2015-11-28T01:02:06Z" finished-at="2015-11-28T01:02:41Z">
+      <class name="test.LoginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.LoginTest@22f71333]" name="beforeTest" is-config="true" duration-ms="10785" started-at="2015-11-27T20:02:06Z" finished-at="2015-11-27T20:02:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.RegisterTest@6cd8737]" name="Test" duration-ms="40057" started-at="2015-11-27T19:15:52Z" data-provider="registerpage" finished-at="2015-11-27T19:16:32Z">
+        <test-method status="PASS" signature="Successful(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.LoginTest@22f71333]" name="Successful" duration-ms="7792" started-at="2015-11-27T20:02:17Z" data-provider="loginpage" finished-at="2015-11-27T20:02:25Z">
           <params>
             <param index="0">
               <value>
@@ -20,210 +20,27 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[cibertecCibertecjo]]>
+                <![CDATA[pruebacibertec]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[cibertecCibertecjo1]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[cibertecCibertecjo1]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[cibertecCibertecjo1]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[cibertecCibertecjo1]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[cibertecCibertecjo1@cibertecCibertecjo1.com]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[English]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Peru]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[San Jose]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[https://www.youtube.com/watch?v=z5o90P6YfEg]]>
+                <![CDATA[pruebacibertec]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"class name","selector":"register"}
-Command duration or timeout: 40.05 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'YEP', ip: '172.16.6.99', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 0551441b-961d-4f9e-8375-822486044583
-*** Element info: {Using=class name, value=register}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"class name","selector":"register"}
-Command duration or timeout: 40.05 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'YEP', ip: '172.16.6.99', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 0551441b-961d-4f9e-8375-822486044583
-*** Element info: {Using=class name, value=register}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:467)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy6.click(Unknown Source)
-	at pageObject.MainPage.ClickOnRegister(MainPage.java:25)
-	at test.RegisterTest.Test(RegisterTest.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"class name","selector":"register"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'YEP', ip: '172.16.6.99', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Jo/AppData/Local/Temp/anonymous4966026209777651917webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Jo/AppData/Local/Temp/anonymous4966026209777651917webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method status="FAIL" signature="beforeTest()[pri:0, instance:test.RegisterTest@6cd8737]" name="beforeTest" is-config="true" duration-ms="0" started-at="2015-11-27T19:16:32Z" finished-at="2015-11-27T19:16:32Z">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
-            <message>
-              <![CDATA[Error communicating with the remote browser. It may have died.
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'YEP', ip: '172.16.6.99', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'YEP', ip: '172.16.6.99', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-	at org.openqa.selenium.firefox.FirefoxDriver.access$100(FirefoxDriver.java:65)
-	at org.openqa.selenium.firefox.FirefoxDriver$1$1.implicitlyWait(FirefoxDriver.java:244)
-	at test.RegisterTest.beforeTest(RegisterTest.java:30)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:161)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:170)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	... 29 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 44 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+        </test-method> <!-- Successful -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.LoginTest@22f71333]" name="afterTest" is-config="true" duration-ms="454" started-at="2015-11-27T20:02:25Z" finished-at="2015-11-27T20:02:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.LoginTest@22f71333]" name="beforeTest" is-config="true" duration-ms="10774" started-at="2015-11-27T20:02:25Z" finished-at="2015-11-27T20:02:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.RegisterTest@6cd8737]" name="Test" duration-ms="0" started-at="2015-11-27T19:16:38Z" data-provider="registerpage" finished-at="2015-11-27T19:16:38Z">
+        <test-method status="PASS" signature="Successful(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.LoginTest@22f71333]" name="Successful" duration-ms="4413" started-at="2015-11-27T20:02:36Z" data-provider="loginpage" finished-at="2015-11-27T20:02:40Z">
           <params>
             <param index="0">
               <value>
@@ -232,449 +49,23 @@ Caused by: java.net.ConnectException: Connection refused: connect
             </param>
             <param index="1">
               <value>
-                <![CDATA[cibertecCibertecjo2]]>
+                <![CDATA[asdasd]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[cibertecCibertecjo2]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[cibertecCibertecjo2]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[cibertecCibertecjo2]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[cibertecCibertecjo2]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[cibertecCibertecjo2@cibertecCibertecjo2.com]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[(auto)]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[USA]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[San Francisco]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[https://www.hostedredmine.com/account/register]]>
+                <![CDATA[adasd]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method status="SKIP" signature="Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.RegisterTest@6cd8737]" name="Test" duration-ms="1" started-at="2015-11-27T19:16:38Z" data-provider="registerpage" finished-at="2015-11-27T19:16:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[cibertecCibertecjo3]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[cibertecCibertecjo3]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[cibertecCibertecjo3]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[cibertecCibertecjo3]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[cibertecCibertecjo3]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[cibertecCibertec3@cibertecCibertec3.com]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Español]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[España]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Madrid]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[https://www.hostedredmine.com/]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Successful -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.LoginTest@22f71333]" name="afterTest" is-config="true" duration-ms="361" started-at="2015-11-27T20:02:40Z" finished-at="2015-11-27T20:02:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:test.RegisterTest@6cd8737]" name="beforeTest" is-config="true" duration-ms="0" started-at="2015-11-27T19:16:38Z" finished-at="2015-11-27T19:16:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:test.RegisterTest@6cd8737]" name="beforeTest" is-config="true" duration-ms="0" started-at="2015-11-27T19:16:38Z" finished-at="2015-11-27T19:16:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.RegisterTest@6cd8737]" name="Test" duration-ms="0" started-at="2015-11-27T19:16:38Z" data-provider="registerpage" finished-at="2015-11-27T19:16:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[cibertecCibertecjo4]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[cibertecCibertecjo4]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[cibertecCibertec4]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[cibertecCibertec4]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[cibertecCibertec4]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[cibertecCibertec4@cibertecCibertec4.com]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Italiano]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Italia]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Milan]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[novalido]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method status="SKIP" signature="Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.RegisterTest@6cd8737]" name="Test" duration-ms="0" started-at="2015-11-27T19:16:38Z" data-provider="registerpage" finished-at="2015-11-27T19:16:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[cibertecCibertecjo5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[cibertecCibertecjo5]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[cibertecCibertec5]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[cibertecCibertec5]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[cibertecCibertec5]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[novalido]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[English]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[United Kingdom]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Londres]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[http://stackoverflow.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:test.RegisterTest@6cd8737]" name="beforeTest" is-config="true" duration-ms="0" started-at="2015-11-27T19:16:38Z" finished-at="2015-11-27T19:16:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.RegisterTest@6cd8737]" name="Test" duration-ms="0" started-at="2015-11-27T19:16:38Z" data-provider="registerpage" finished-at="2015-11-27T19:16:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[novalido]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[cibertecCibertecjo6]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[cibertecCibertec5]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[cibertecCibertec5]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[cibertecCibertec5]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[cibertecCibertec5@cibertecCibertec5.com]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Italiano]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[United Kingdom]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Londres]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[http://stackoverflow.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:test.RegisterTest@6cd8737]" name="beforeTest" is-config="true" duration-ms="0" started-at="2015-11-27T19:16:38Z" finished-at="2015-11-27T19:16:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.RegisterTest@6cd8737]" name="Test" duration-ms="0" started-at="2015-11-27T19:16:39Z" data-provider="registerpage" finished-at="2015-11-27T19:16:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[7]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[cibertecCibertecjo7]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[novalido]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[cibertecCibertec7]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[cibertecCibertec7]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[cibertecCibertec7]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[cibertecCibertec7@cibertecCibertec7.com]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Español]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[España]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Valencia]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[https://www.hostedredmine.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:test.RegisterTest@6cd8737]" name="beforeTest" is-config="true" duration-ms="0" started-at="2015-11-27T19:16:39Z" finished-at="2015-11-27T19:16:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.RegisterTest@6cd8737]" name="Test" duration-ms="0" started-at="2015-11-27T19:16:39Z" data-provider="registerpage" finished-at="2015-11-27T19:16:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[cibertecCibertecjo8]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[cibertecCibertecjo8]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[novalido]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[cibertecCibertec8]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[cibertecCibertec8]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[cibertecCibertec8@cibertecCibertec8.com]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[(auto)]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[USA]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[San Francisco]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[https://www.hostedredmine.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:test.RegisterTest@6cd8737]" name="beforeTest" is-config="true" duration-ms="0" started-at="2015-11-27T19:16:39Z" finished-at="2015-11-27T19:16:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-      </class> <!-- test.RegisterTest -->
+        </test-method> <!-- afterTest -->
+      </class> <!-- test.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

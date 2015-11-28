@@ -9,8 +9,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import test.MainCommerceTest;
-
 public class DashboardPage extends MainLogger{
 
 	@FindBy(id="loggedas")

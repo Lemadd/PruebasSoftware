@@ -7,6 +7,7 @@ import logger.MainLogger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.AssertJUnit;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -70,7 +71,6 @@ public class RegisterTest extends MainLogger{
 		}
   	}
 	
-	
 	@DataProvider(name="registerpage")
 	public Object[][] sendDataMySqlCustomers() {
 		try {
@@ -82,6 +82,15 @@ public class RegisterTest extends MainLogger{
 			LOGGER.severe("An error in sendDataMySqlCustomers method happens");
 			return null;
 		}
-
 	}
+	
+	@AfterMethod
+  	public void afterTest(){
+  		try {
+  	  		LOGGER.info("Quiting of the driver");
+  	  		driver.quit();
+		} catch (Exception e) {
+			LOGGER.severe("An error happens trying to quitting the driver");
+		}
+  	}
 }
