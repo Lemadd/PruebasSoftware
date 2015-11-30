@@ -25,8 +25,6 @@ public class UseLogger extends MainLogger {
 	    LOGGER.warning("Info Log");
 	    LOGGER.info("Info Log");
 	    LOGGER.setLevel(Level.FINEST);
-	    LOGGER.finest("2Really not importantasdddddddddddddddddddddddddddddddddddddddddddddd             asdasdasdasdasdasdsad");
-
 	  }
 
 	  public static void main(String[] args) {

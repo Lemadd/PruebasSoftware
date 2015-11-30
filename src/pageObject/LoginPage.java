@@ -25,37 +25,37 @@ public class LoginPage extends MainLogger{
 	
 	public LoginPage(WebDriver webDriver) {
 		PageFactory.initElements(webDriver, this);
-		LOGGER.info(this.getClass().getSimpleName());
+		LOGGER.info("**"+this.getClass().getSimpleName());
 	}
 	
-	public void WriteUserName(String userName){
-		LOGGER.info("WriteUserName : "+userName);
+	public void writeUserName(String userName){
+		LOGGER.info("***writeUserName : "+userName);
 		txtUserName.sendKeys(userName);
 	}
-	public void WritePassword(String password){
-		LOGGER.info("WritePassword : "+password);
+	public void writePassword(String password){
+		LOGGER.info("***writePassword : "+password);
 		txtPassword.sendKeys(password);
 	}
-	public void ClickOnLogIn(){
-		LOGGER.info("ClickOnLogIn");
+	public void clickOnLogIn(){
+		LOGGER.info("***clickOnLogIn");
 		btnLogIn.click();
 	}
 	
-	public void SignIn(String userName, String password) {
+	public void signIn(String userName, String password) {
 		try {
-			LOGGER.info("SignInMethod");
+			LOGGER.info("***signInMethod params " + userName + " - "+password);
 			txtUserName.sendKeys(userName);
 			txtPassword.sendKeys(password);
 			btnLogIn.click();
 		} catch (Exception e) {
-			LOGGER.severe("An error happen when trying to Sign In with "+userName+" - "+password );
+			LOGGER.severe("***An error happen when trying to Sign In with "+userName+" - "+password );
 		}
 	}
 	
-	public boolean VerifyErrorMessage(){
+	public boolean verifyErrorMessage(){
 		String errorMessageText;
 		try {
-			LOGGER.info("VerifyErrorMessageMethod");
+			LOGGER.info("***verifyErrorMessageMethod");
 			errorMessageText=errorMessage.getText();
 			if (errorMessageText.equalsIgnoreCase(Constants.LOGIN_ERROR_ES)) {
 				return true;
@@ -63,7 +63,7 @@ public class LoginPage extends MainLogger{
 				return false;
 			}
 		} catch (Exception e) {
-			LOGGER.severe("An error happen when trying to find the error message" );
+			LOGGER.severe("***An error happen when trying to find the error message" );
 			return false;
 		}
 	}

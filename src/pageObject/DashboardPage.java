@@ -16,16 +16,17 @@ public class DashboardPage extends MainLogger{
 	
 	public DashboardPage(WebDriver webDriver) {
 		PageFactory.initElements(webDriver, this);
-		LOGGER.info(this.getClass().getSimpleName());
+		LOGGER.info("**"+this.getClass().getSimpleName());
 	}
 	
-	public boolean VerifySuccessfulLogin () {
+	public boolean verifySuccessfulLogin () {
+		LOGGER.info("***verifySuccessfulLogin()");
 		String elementText = lblLoggedAs.getText();
 		if (elementText.contains("Conectado como")){
-			LOGGER.info("Ingreso a la pagina correctament");
+			LOGGER.info("***Ingreso a la pagina correctament");
 			return true;
 		} else {
-			LOGGER.severe("Ocurrio un erro al intentar Loguearse");
+			LOGGER.severe("***Ocurrio un erro al intentar Loguearse");
 			return false;
 		}
 	}

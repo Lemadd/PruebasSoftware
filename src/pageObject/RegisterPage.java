@@ -49,10 +49,10 @@ public class RegisterPage extends MainLogger{
 	
 	public RegisterPage(WebDriver webDriver){
 		PageFactory.initElements(webDriver, this);
-		LOGGER.info(this.getClass().getSimpleName());
+		LOGGER.info("**"+this.getClass().getSimpleName());
 	}
 	
-	public void InsertNewUser(String username,
+	public void insertNewUser(String username,
 							  String password,
 							  String confirmPassword,
 							  String firstName,
@@ -62,64 +62,73 @@ public class RegisterPage extends MainLogger{
 							  String country,
 							  String company,
 							  String website){
-		LOGGER.info("InsertNewUser");
-		WriteUserName(username);
-		WritePassword(password);
-		WritePasswordConfirmation(confirmPassword);
-		WriteFirstName(firstName);
-		WriteLastName(LastName);
-		WriteEmail(email);
-		WriteLastName(language);
-		WriteCountry(country);
-		WriteWebSite(website);
+		LOGGER.info("**insertNewUser params "+username+ " - "
+											+password+ " - "
+											+confirmPassword+ " - "
+											+firstName+ " - "
+											+LastName+ " - "
+											+email+ " - "
+											+language+ " - "
+											+country+ " - "
+											+company+ " - "
+											+website);
+		writeUserName(username);
+		writePassword(password);
+		writePasswordConfirmation(confirmPassword);
+		writeFirstName(firstName);
+		writeLastName(LastName);
+		writeEmail(email);
+		writeLastName(language);
+		writeCountry(country);
+		writeWebSite(website);
 		clickOnSave();
 	}
 	
-	public void WriteUserName(String username){
+	public void writeUserName(String username){
 		if (username.equalsIgnoreCase("novalido")) {
 			username="";
-			LOGGER.info("WriteUserName : "+username);
+			LOGGER.info("***writeUserName : "+username);
 			txtUserName.sendKeys(username);
 		}else {
-			LOGGER.info("WriteUserName : "+username);
+			LOGGER.info("***writeUserName : "+username);
 			txtUserName.sendKeys(username);
 		}
 	}
 	
-	public void WritePassword(String password){
+	public void writePassword(String password){
 		if (password.equalsIgnoreCase("novalido")) {
 			password="";
-			LOGGER.info("WriteUserName : "+password);
+			LOGGER.info("***writePassword : "+password);
 			txtPassword.sendKeys(password);
 		}else {
-			LOGGER.info("WriteUserName : "+password);
+			LOGGER.info("***writePassword : "+password);
 			txtPassword.sendKeys(password);;
 		}
 	}
 	
-	public void WritePasswordConfirmation(String password){
+	public void writePasswordConfirmation(String password){
 		if (password.equalsIgnoreCase("novalido")) {
 			password="";
-			LOGGER.info("WritePasswordConfirmation : "+password);
+			LOGGER.info("***writePasswordConfirmation : "+password);
 			txtPasswordConfirmation.sendKeys(password);
 		}else {
-			LOGGER.info("WritePasswordConfirmation : "+password);
+			LOGGER.info("***writePasswordConfirmation : "+password);
 			txtPasswordConfirmation.sendKeys(password);
 		}
 	}
 	
-	public void WriteFirstName(String firstname) {
+	public void writeFirstName(String firstname) {
 		if (firstname.equalsIgnoreCase("novalido")) {
 			firstname="";
-			LOGGER.info("WriteFirstName : "+firstname);
+			LOGGER.info("***writeFirstName : "+firstname);
 			txtFirstName.sendKeys(firstname);
 		}else {
-			LOGGER.info("WriteFirstName : "+firstname);
+			LOGGER.info("***writeFirstName : "+firstname);
 			txtFirstName.sendKeys(firstname);
 		}
 	}
 	
-	public void WriteLastName(String lastname){
+	public void writeLastName(String lastname){
 		if (lastname.equalsIgnoreCase("novalido")) {
 			lastname="";
 			LOGGER.info("WriteLastName : "+lastname);
@@ -130,58 +139,58 @@ public class RegisterPage extends MainLogger{
 		}
 	}
 	
-	public void WriteEmail(String email){
+	public void writeEmail(String email){
 		if (email.equalsIgnoreCase("novalido")) {
 			email="";
-			LOGGER.info("WriteEmail : "+email);
+			LOGGER.info("***writeEmail : "+email);
 			txtEmail.sendKeys(email);
 		}else {
-			LOGGER.info("WriteEmail : "+email);
+			LOGGER.info("***writeEmail : "+email);
 			txtEmail.sendKeys(email);
 		}
 	}
 	
-	public void SelectOptionOnLanguage(String language){
+	public void selectOptionOnLanguage(String language){
 		if (language.equalsIgnoreCase("novalido")) {
 			language="";
-			LOGGER.info("SelectOptionOnLanguage : "+language);
+			LOGGER.info("***selectOptionOnLanguage : "+language);
 			cboLanguage.selectByVisibleText(language);
 		}else {
 
-			LOGGER.info("SelectOptionOnLanguage : "+language);
+			LOGGER.info("***selectOptionOnLanguage : "+language);
 			cboLanguage.selectByVisibleText(language);
 		}
 	}
 	
-	public void WriteCountry(String country){
+	public void writeCountry(String country){
 		if (country.equalsIgnoreCase("novalido")) {
 			country="";
-			LOGGER.info("WriteCountry : "+country);
+			LOGGER.info("***WriteCountry : "+country);
 			txtCountry.sendKeys(country);
 		}else {
-			LOGGER.info("WriteCountry : "+country);
+			LOGGER.info("***WriteCountry : "+country);
 			txtCountry.sendKeys(country);
 		}
 	}
 	
-	public void WriteCompany(String company){
+	public void writeCompany(String company){
 		if (company.equalsIgnoreCase("novalido")) {
 			company="";
-			LOGGER.info("WriteCompany : "+company);
+			LOGGER.info("***writeCompany : "+company);
 			txtCompany.sendKeys(company +this);
 		}else {
-			LOGGER.info("WriteCompany : "+company);
+			LOGGER.info("***writeCompany : "+company);
 			txtCompany.sendKeys(company +this);
 		}
 	}
 	
-	public void WriteWebSite(String website){
+	public void writeWebSite(String website){
 		if (website.equalsIgnoreCase("novalido")) {
 			website="";
-			LOGGER.info("WriteWebSite : "+website);
+			LOGGER.info("***writeWebSite : "+website);
 			txtWebsite.sendKeys(website);
 		}else {
-			LOGGER.info("WriteWebSite : "+website);
+			LOGGER.info("***writeWebSite : "+website);
 			txtWebsite.sendKeys(website);
 		}
 	}
@@ -193,16 +202,16 @@ public class RegisterPage extends MainLogger{
 	/*
 	 * Methods to verify error messages
 	 */
-	public boolean VerifyErrorMessage(){
+	public boolean verifyErrorMessage(){
 		try {
-			LOGGER.info("VerifyErrorMessageMethod");
+			LOGGER.info("***verifyErrorMessage");
 			if (errorMessage.isDisplayed()) {
 				return true;
 			}else {
 				return false;
 			}
 		} catch (Exception e) {
-			LOGGER.severe("An error happen when trying to find the error message" );
+			LOGGER.severe("***An error happen when trying to find the error message" );
 			return false;
 		}
 	}

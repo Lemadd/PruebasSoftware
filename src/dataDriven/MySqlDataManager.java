@@ -16,7 +16,7 @@ public class MySqlDataManager extends MainLogger{
 	
 	public String [][] getMySqlTable(String table) throws ClassNotFoundException {
 		try {
-			LOGGER.info("Executing getObjectMysql");
+			LOGGER.info("*Executing getObjectMysql");
 			String[][] tableArray;
 			Class.forName(Constants.DB_DRIVER);
 		
@@ -46,11 +46,11 @@ public class MySqlDataManager extends MainLogger{
 			
 			stmt.close();
 			conn.close();
-			LOGGER.info("Conection Successful");
+			LOGGER.info("**Conection Successful");
 			return tableArray;
 					
 		} catch (SQLException e) {
-			LOGGER.severe("Error mysql" +e.getMessage());
+			LOGGER.severe("**Error mysql" +e.getMessage());
 			return null;
 		}
 		

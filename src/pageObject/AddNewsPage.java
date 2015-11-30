@@ -22,49 +22,51 @@ public class AddNewsPage extends MainLogger {
 	
 	public AddNewsPage(WebDriver webDriver){
 		PageFactory.initElements(webDriver, this);
+		LOGGER.info("**"+this.getClass().getSimpleName());
 	}
 	
-	public void InsertNews(String title, String summary, String description){
-		LOGGER.info("InsertNews");
-		WriteTitle(title);
-		WriteSummary(summary);
-		WriteDescription(description);
-		ClickOnBtnCommit();
+	public void insertNews(String title, String summary, String description){
+		LOGGER.info("***insertNews" + " params "+title + " - "+summary + " - " + description);
+		writeTitle(title);
+		writeSummary(summary);
+		writeDescription(description);
+		clickOnBtnCommit();
 	}
-	public void WriteTitle(String title){
+	public void writeTitle(String title){
 		if (title.equalsIgnoreCase(title)) {
 			title="";
-			LOGGER.info("WriteTitle : "+title);
+			LOGGER.info("***writeTitle : "+title);
 			txtTitle.sendKeys(title);
 		}else{
-			LOGGER.info("WriteTitle : "+title);
+			LOGGER.info("***writeTitle : "+title);
 			txtTitle.sendKeys(title);
 		}
 	}
 	
-	public void WriteSummary(String summary){
+	public void writeSummary(String summary){
 		if (summary.equalsIgnoreCase(summary)) {
 			summary="";
-			LOGGER.info("WriteSummary : "+summary);
+			LOGGER.info("***writeSummary : "+summary);
 			txtSummary.sendKeys(summary);
 		}else{
-			LOGGER.info("WriteSummary : "+summary);
+			LOGGER.info("***writeSummary : "+summary);
 			txtSummary.sendKeys(summary);
 		}
 	}
 	
-	public void WriteDescription(String description){
+	public void writeDescription(String description){
 		if (description.equalsIgnoreCase(description)) {
 			description="";
-			LOGGER.info("WriteDescription : "+description);
+			LOGGER.info("***writeDescription : "+description);
 			txtDescription.sendKeys(description);
 		}else{
-			LOGGER.info("WriteDescription : "+description);
+			LOGGER.info("***writeDescription : "+description);
 			txtDescription.sendKeys(description);
 		}
 	}
 	
-	public void ClickOnBtnCommit(){
+	public void clickOnBtnCommit(){
+		LOGGER.info("***clickOnBtnCommit");
 		btnCommit.click();
 	}
 }

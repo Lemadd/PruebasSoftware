@@ -32,31 +32,31 @@ public class LoggedPage extends MainLogger {
 	
 	public LoggedPage(WebDriver webdriver){
 		PageFactory.initElements(webdriver, this);
-		LOGGER.info(this.getClass().getSimpleName());
+		LOGGER.info("**"+this.getClass().getSimpleName());
 	}
 	
-	public void ClickOnHome(){
-		LOGGER.info("ClickOnHome");
+	public void clickOnHome(){
+		LOGGER.info("***clickOnHome");
 		linkHome.click();
 	}
-	public void ClickOnMyPage(){
-		LOGGER.info("ClickOnHome");
+	public void clickOnMyPage(){
+		LOGGER.info("***clickOnHome");
 		linkmyPage.click();
 	}
-	public void ClickOnMyProjects(){
-		LOGGER.info("ClickOnMyProjects");
+	public void clickOnMyProjects(){
+		LOGGER.info("***clickOnMyProjects");
 		linkmyProjects.click();
 	}
-	public void ClickOnHelp(){
-		LOGGER.info("ClickOnHelp");
+	public void clickOnHelp(){
+		LOGGER.info("***clickOnHelp");
 		linkHelp.click();
 	}
-	public void ClickOnMyAccount(){
-		LOGGER.info("ClickOnMyAccount");
+	public void clickOnMyAccount(){
+		LOGGER.info("***clickOnMyAccount");
 		linkMyAccount.click();
 	}
-	public void ClickOnLogOut(){
-		LOGGER.info("ClickOnLogOut");
+	public void clickOnLogOut(){
+		LOGGER.info("***clickOnLogOut");
 		linkLogout.click();
 	}
 

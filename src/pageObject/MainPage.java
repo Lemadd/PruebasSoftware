@@ -17,15 +17,15 @@ public class MainPage extends MainLogger{
 	
 	public MainPage(WebDriver webDriver) {
 		PageFactory.initElements(webDriver, this);
-		LOGGER.info(this.getClass().getSimpleName());
+		LOGGER.info("**"+this.getClass().getSimpleName());
 	}
 	
-	public void ClickOnRegister(){
-		LOGGER.info("ClickOnRegister");
+	public void clickOnRegister(){
+		LOGGER.info("***ClickOnRegister");
 		linkregister.click();
 	}
 	public void clickOnSignOn(){
-		LOGGER.info("clickOnSignOn");
+		LOGGER.info("***clickOnSignOn");
 		linkLogin.click();
 	}
 }

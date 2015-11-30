@@ -27,13 +27,18 @@ public class RegisterTest extends MainLogger{
 	
 	@BeforeMethod
 	public void beforeTest(){
-		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		driver.get(Constants.URLMAIN);
-		mainpage = new MainPage(driver);
-		loginpage = new LoginPage(driver);
-		registerpage = new RegisterPage(driver);
+		try {
+			driver = new FirefoxDriver();
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+			driver.manage().window().maximize();
+			driver.get(Constants.URLMAIN);
+			mainpage = new MainPage(driver);
+			loginpage = new LoginPage(driver);
+			registerpage = new RegisterPage(driver);
+			LOGGER.info("*Driver initialized correctly");
+		} catch (Exception e) {
+			LOGGER.severe("*An error happen trying to initializing the driver");
+		}
 	}
 
 	@Test(dataProvider="registerpage")
@@ -48,9 +53,9 @@ public class RegisterTest extends MainLogger{
   						   String country,
   						   String company,
   						   String website) {
-		LOGGER.info("Executing TestCase " +idTestCase);
-		mainpage.ClickOnRegister();
-		registerpage.InsertNewUser(username,
+		LOGGER.info("**Executing TestCase T" +idTestCase);
+		mainpage.clickOnRegister();
+		registerpage.insertNewUser(username,
 								   password,
 								   confirmPassword,
 								   firstName,
@@ -61,25 +66,25 @@ public class RegisterTest extends MainLogger{
 								   company,
 								   website);
 		if (username.equalsIgnoreCase("novalido")) {
-			registerpage.VerifyErrorMessage();
+			registerpage.verifyErrorMessage();
 		}else if (username.equalsIgnoreCase("novalido")) {
-			registerpage.VerifyErrorMessage();
+			registerpage.verifyErrorMessage();
 		}else if (username.equalsIgnoreCase("novalido")) {
-			registerpage.VerifyErrorMessage();
+			registerpage.verifyErrorMessage();
 		}else if (username.equalsIgnoreCase("novalido")) {
-			registerpage.VerifyErrorMessage();
+			registerpage.verifyErrorMessage();
 		}
   	}
 	
 	@DataProvider(name="registerpage")
 	public Object[][] sendDataMySqlCustomers() {
 		try {
-			LOGGER.info("The datadriver couldn't load correctly");
+			LOGGER.info("*The datadriver couldn't load correctly");
 			MySqlDataManager mySqlDataManager = new MySqlDataManager();
 			Object[][] arrData = mySqlDataManager.getMySqlTable("registerpage");
 			return arrData;
 		} catch (Exception e) {
-			LOGGER.severe("An error in sendDataMySqlCustomers method happens");
+			LOGGER.severe("*An error in sendDataMySqlCustomers method happens");
 			return null;
 		}
 	}
@@ -87,10 +92,10 @@ public class RegisterTest extends MainLogger{
 	@AfterMethod
   	public void afterTest(){
   		try {
-  	  		LOGGER.info("Quiting of the driver");
+  	  		LOGGER.info("*Quiting of the driver");
   	  		driver.quit();
 		} catch (Exception e) {
-			LOGGER.severe("An error happens trying to quitting the driver");
+			LOGGER.severe("*An error happens trying to quitting the driver");
 		}
   	}
 }

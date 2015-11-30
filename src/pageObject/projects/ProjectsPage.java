@@ -29,11 +29,11 @@ public class ProjectsPage extends MainLogger{
 	
 	public ProjectsPage(WebDriver webDriver){
 		PageFactory.initElements(webDriver, this);
-		LOGGER.info(this.getClass().getSimpleName());
+		LOGGER.info("**"+this.getClass().getSimpleName());
 	}
 	
 	public void ClickOnNewProject(){
-		LOGGER.info("ClickOnNewProject");
+		LOGGER.info("***ClickOnNewProject");
 		linkNewProject.click();
 	}
 }

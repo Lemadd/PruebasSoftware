@@ -16,6 +16,7 @@ import dataDriven.MySqlDataManager;
 import pageObject.DashboardPage;
 import pageObject.LoginPage;
 import pageObject.MainPage;
+import pageObject.RegisterPage;
 import util.Constants;
 
 public class LoginTest extends MainLogger {
@@ -26,36 +27,41 @@ public class LoginTest extends MainLogger {
 	
 	@BeforeMethod
 	public void beforeTest(){
-		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		driver.get(Constants.URLMAIN);
-		mainpage = new MainPage(driver);
-		loginpage = new LoginPage(driver);
-		dashboardpage = new DashboardPage(driver);
+		try {
+			driver = new FirefoxDriver();
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+			driver.manage().window().maximize();
+			driver.get(Constants.URLMAIN);
+			mainpage = new MainPage(driver);
+			loginpage = new LoginPage(driver);
+			dashboardpage = new DashboardPage(driver);
+			LOGGER.info("*Driver initialized correctly");
+		} catch (Exception e) {
+			LOGGER.severe("*An error happen trying to initializing the driver");
+		}
 	}
 	
 	@Test(dataProvider="loginpage")
   	public void Successful(String idTest, String username, String password ) {
-		LOGGER.info("Executing Test Case " + idTest);
+		LOGGER.info("**Executing Test Case " + idTest);
 		mainpage.clickOnSignOn();
-		loginpage.SignIn(username, password);
+		loginpage.signIn(username, password);
 		if (Integer.parseInt(idTest)==1) {
-			AssertJUnit.assertTrue(dashboardpage.VerifySuccessfulLogin());
+			AssertJUnit.assertTrue(dashboardpage.verifySuccessfulLogin());
 		}else {
-			AssertJUnit.assertTrue(loginpage.VerifyErrorMessage());
+			AssertJUnit.assertTrue(loginpage.verifyErrorMessage());
 		}
   	}
   	
   	@DataProvider(name="loginpage")
 	public Object[][] sendDataMySqlCustomers() {
 		try {
-			LOGGER.info("The datadriver couldn't load correctly");
+			LOGGER.info("*The datadriver couldn't load correctly");
 			MySqlDataManager mySqlDataManager = new MySqlDataManager();
 			Object[][] arrData = mySqlDataManager.getMySqlTable("loginpage");
 			return arrData;
 		} catch (Exception e) {
-			LOGGER.severe("An error in sendDataMySqlCustomers method happens");
+			LOGGER.severe("*An error in sendDataMySqlCustomers method happens");
 			return null;
 		}
 	}
@@ -63,10 +69,10 @@ public class LoginTest extends MainLogger {
   	@AfterMethod
   	public void afterTest(){
   		try {
-  	  		LOGGER.info("Quiting of the driver");
+  	  		LOGGER.info("*Quiting of the driver");
   	  		driver.quit();
 		} catch (Exception e) {
-			LOGGER.severe("An error happens trying to quitting the driver");
+			LOGGER.severe("*An error happens trying to quitting the driver");
 		}
   	}
   
