@@ -5,7 +5,9 @@
     <classes>
       <class name="test.LoginTest">
         <methods>
-          <include name="Successful"/>
+          <include name="Successful" invocation-numbers="0 1"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
         </methods>
       </class> <!-- test.LoginTest -->
     </classes>

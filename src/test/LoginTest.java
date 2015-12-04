@@ -1,36 +1,36 @@
 package test;
 
-import java.util.concurrent.TimeUnit;
-
 import logger.MainLogger;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import dataDriven.MySqlDataManager;
 import pageObject.DashboardPage;
 import pageObject.LoginPage;
 import pageObject.MainPage;
-import pageObject.RegisterPage;
 import util.Constants;
+import dataDriven.MySqlDataManager;
+import driver.GetDriver;
 
 public class LoginTest extends MainLogger {
-	private WebDriver driver;
 	MainPage mainpage;
 	LoginPage loginpage;
 	DashboardPage dashboardpage;
-	
+	String browser="opera";
+	GetDriver getDriver;
+	WebDriver driver;
+	String operaChromiumDriver = "C:/Users/suite801/Downloads/PruebasSoftware/src/operadriver32.exe";
+	String operaBrowserLocation = "C:/Program Files (x86)/Opera";
+			
 	@BeforeMethod
 	public void beforeTest(){
 		try {
-			driver = new FirefoxDriver();
-			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
+			driver=getDriver.browserType("firefox");
+			System.out.println("llego");
 			driver.get(Constants.URLMAIN);
 			mainpage = new MainPage(driver);
 			loginpage = new LoginPage(driver);

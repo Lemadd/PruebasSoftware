@@ -2,6 +2,9 @@ package util;
 
 public class Constants {
 	
+	
+	public static String BROWSER;
+	
 	public static final String DB_URL = "jdbc:mysql://localhost:3306/";
 	public static final String DB_DRIVER = "com.mysql.jdbc.Driver";
 	public static final String DB_NAME = "testco";
