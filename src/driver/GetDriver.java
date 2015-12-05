@@ -6,11 +6,10 @@ import logger.MainLogger;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
-
-import util.Constants;
 
 public class GetDriver extends MainLogger{
 	
@@ -18,7 +17,9 @@ public class GetDriver extends MainLogger{
 		try {
 			if (nameDriver.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\chromedriver.exe");
-				driverw = new  ChromeDriver();
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--lang=es");
+				driverw = new  ChromeDriver(options);
 			}else if (nameDriver.equalsIgnoreCase("opera")) {
 				System.setProperty("webdriver.opera.driver", System.getProperty("user.dir")+"src/operadriver32.exe");    
 				driverw = new  OperaDriver();

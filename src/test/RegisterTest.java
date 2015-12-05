@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pageObject.LoginPage;
@@ -24,9 +25,10 @@ public class RegisterTest extends MainLogger{
 	RegisterPage registerpage;
 	GetDriver getDriver=new GetDriver();
 	@BeforeMethod
-	public void beforeTest(){
+	@Parameters({ "browser" })
+	public void beforeTest(String browsers){
 		try {
-			driver=getDriver.browserType(driver,"firefox");
+			driver=getDriver.browserType(driver,browsers);
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			driver.get(Constants.URLMAIN);
