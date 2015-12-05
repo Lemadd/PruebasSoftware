@@ -13,20 +13,21 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import dataDriven.MySqlDataManager;
+import driver.GetDriver;
 import pageObject.DashboardPage;
 import pageObject.LoginPage;
 import pageObject.MainPage;
 import util.Constants;
 
 public class AddNewsTest extends MainLogger {
-	private WebDriver driver;
+	WebDriver driver;
 	MainPage mainpage;
 	LoginPage loginpage;
 	DashboardPage dashboardpage;
-	
+	GetDriver getDriver=new GetDriver();
 	@BeforeMethod
 	public void beforeTest(){
-		driver = new FirefoxDriver();
+		driver=getDriver.browserType(driver,"firefox");
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(Constants.URLMAIN);

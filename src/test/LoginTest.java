@@ -7,6 +7,7 @@ import org.testng.AssertJUnit;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pageObject.DashboardPage;
@@ -20,17 +21,14 @@ public class LoginTest extends MainLogger {
 	MainPage mainpage;
 	LoginPage loginpage;
 	DashboardPage dashboardpage;
-	String browser="opera";
-	GetDriver getDriver;
-	WebDriver driver;
-	String operaChromiumDriver = "C:/Users/suite801/Downloads/PruebasSoftware/src/operadriver32.exe";
-	String operaBrowserLocation = "C:/Program Files (x86)/Opera";
-			
+	GetDriver getDriver=new GetDriver();
+	WebDriver driver,drivers;
+		
 	@BeforeMethod
-	public void beforeTest(){
+	@Parameters({ "browser" })
+	public void beforeTest(String browser){
 		try {
-			driver=getDriver.browserType("firefox");
-			System.out.println("llego");
+			driver=getDriver.browserType(drivers,browser);
 			driver.get(Constants.URLMAIN);
 			mainpage = new MainPage(driver);
 			loginpage = new LoginPage(driver);
@@ -41,8 +39,8 @@ public class LoginTest extends MainLogger {
 		}
 	}
 	
-	@Test(dataProvider="loginpage")
-  	public void Successful(String idTest, String username, String password ) {
+	@Test(dataProvider="loginpage", testName="loginTest")
+  	public void login(String idTest, String username, String password ) {
 		LOGGER.info("**Executing Test Case " + idTest);
 		mainpage.clickOnSignOn();
 		loginpage.signIn(username, password);

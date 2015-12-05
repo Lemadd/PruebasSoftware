@@ -1,6 +1,6 @@
 package logger;
+import java.io.File;
 import java.io.IOException;
-import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
 import java.util.logging.Formatter;
 import java.util.logging.Handler;
@@ -22,13 +22,19 @@ public class MyLogger {
 	    // suppress the logging output to the console
 	    Logger rootLogger = Logger.getLogger("");
 	    Handler[] handlers = rootLogger.getHandlers();
-	    /*if (handlers[0] instanceof ConsoleHandler) {
-	      rootLogger.removeHandler(handlers[0]);
-	    }*/
+
 
 	    logger.setLevel(Level.INFO);
 	    //fileTxt = new FileHandler("Logging.txt");
-	    fileHTML = new FileHandler("Logging.html");
+	    
+		File f = new File(System.getProperty("user.dir")+"\\Logger\\Logging.html");
+	    if(!f.exists()) { 
+	    	 fileHTML = new FileHandler(System.getProperty("user.dir")+"\\Logger\\"+"Logging.html");
+	    }else {
+	    	f.delete();
+	    	 fileHTML = new FileHandler(System.getProperty("user.dir")+"\\Logger\\"+"Logging.html");
+		}
+	    
 
 	    // create a TXT formatter
 	    //formatterTxt = new SimpleFormatter();
@@ -40,4 +46,5 @@ public class MyLogger {
 	    fileHTML.setFormatter(formatterHTML);
 	    logger.addHandler(fileHTML);
 	  }
+	  
 }

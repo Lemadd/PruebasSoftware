@@ -5,30 +5,28 @@ import java.util.concurrent.TimeUnit;
 import logger.MainLogger;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.AssertJUnit;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import dataDriven.MySqlDataManager;
-import pageObject.DashboardPage;
 import pageObject.LoginPage;
 import pageObject.MainPage;
 import pageObject.RegisterPage;
 import util.Constants;
+import dataDriven.MySqlDataManager;
+import driver.GetDriver;
 
 public class RegisterTest extends MainLogger{
-	private WebDriver driver;
+	WebDriver driver;
 	MainPage mainpage;
 	LoginPage loginpage;
 	RegisterPage registerpage;
-	
+	GetDriver getDriver=new GetDriver();
 	@BeforeMethod
 	public void beforeTest(){
 		try {
-			driver = new FirefoxDriver();
+			driver=getDriver.browserType(driver,"firefox");
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			driver.get(Constants.URLMAIN);
