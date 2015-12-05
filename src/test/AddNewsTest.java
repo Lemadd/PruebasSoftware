@@ -44,7 +44,7 @@ public class AddNewsTest extends MainLogger {
 	@DataProvider(name="addnewspage")
 	public Object[][] sendDataMySqlCustomers() {
 		try {
-			LOGGER.info("The datadriver couldn't load correctly");
+			LOGGER.info("**sendDataMySqlCustomers");
 			MySqlDataManager mySqlDataManager = new MySqlDataManager();
 			Object[][] arrData = mySqlDataManager.getMySqlTable("registerpage");
 			return arrData;

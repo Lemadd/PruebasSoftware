@@ -79,7 +79,7 @@ public class RegisterTest extends MainLogger{
 	@DataProvider(name="registerpage")
 	public Object[][] sendDataMySqlCustomers() {
 		try {
-			LOGGER.info("*The datadriver couldn't load correctly");
+			LOGGER.info("**sendDataMySqlCustomers");
 			MySqlDataManager mySqlDataManager = new MySqlDataManager();
 			Object[][] arrData = mySqlDataManager.getMySqlTable("registerpage");
 			return arrData;

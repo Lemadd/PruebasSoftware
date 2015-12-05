@@ -54,7 +54,7 @@ public class LoginTest extends MainLogger {
   	@DataProvider(name="loginpage")
 	public Object[][] sendDataMySqlCustomers() {
 		try {
-			LOGGER.info("*The datadriver couldn't load correctly");
+			LOGGER.info("**sendDataMySqlCustomers");
 			MySqlDataManager mySqlDataManager = new MySqlDataManager();
 			Object[][] arrData = mySqlDataManager.getMySqlTable("loginpage");
 			return arrData;
