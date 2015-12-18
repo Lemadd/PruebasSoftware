@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>
+<style>
+table { width: 100% }
+th { font:bold 10pt Tahoma; }
+td { font:normal 10pt Tahoma; }
+h1 {font:normal 11pt Tahoma;}
+</style>
+</head>
+<body>
+<h1>Fri Dec 18 04:25:42 COT 2015</h1>
+<table border="0" cellpadding="5" cellspacing="3">
+<tr align="left">
+	<th style="width:10%">Loglevel</th>
+	<th style="width:15%">Time</th>
+	<th style="width:75%">Log Message</th>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:25</td>
+	<td>**LoginPage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:25</td>
+	<td>**DashboardPage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:25</td>
+	<td>**AddNewsPage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:25</td>
+	<td>**Executing Test Case 3</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:25</td>
+	<td>***clickOnSignOn</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:25</td>
+	<td>***signInMethod params pruebacibertec - pruebacibertec</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:25</td>
+	<td>***insertNews params New Title3testa - New Summary3test - New Description3testa</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:25</td>
+	<td>***writeTitle : New Title3testa</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:25</td>
+	<td>***writeSummary : New Summary3test</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:25</td>
+	<td>***writeDescription : New Description3testa</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:25</td>
+	<td>***clickOnBtnCommit</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:25</td>
+	<td>***veifySuccesfulMessage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:25</td>
+	<td>*Quiting of the driver</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>**MainPage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>**LoginPage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>**DashboardPage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>**AddNewsPage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>**Executing Test Case 4</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***clickOnSignOn</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***signInMethod params pruebacibertec - pruebacibertec</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***insertNews params no valido - New Summary4test - New Description4testa</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***writeTitle : </td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***writeSummary : New Summary4test</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***writeDescription : New Description4testa</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***clickOnBtnCommit</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***verifyErrorMessage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>*Quiting of the driver</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>**MainPage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>**LoginPage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>**DashboardPage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>**AddNewsPage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>**Executing Test Case 5</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***clickOnSignOn</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***signInMethod params pruebacibertec - pruebacibertec</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***insertNews params New Title5testa - no valido - no valido</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***writeTitle : New Title5testa</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***writeSummary : </td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***writeDescription : </td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***clickOnBtnCommit</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***verifyErrorMessage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>*Quiting of the driver</td>
+</tr>
+</table>
+</body>
+</html>

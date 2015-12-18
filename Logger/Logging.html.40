@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+<style>
+table { width: 100% }
+th { font:bold 10pt Tahoma; }
+td { font:normal 10pt Tahoma; }
+h1 {font:normal 11pt Tahoma;}
+</style>
+</head>
+<body>
+<h1>Fri Dec 18 04:26:30 COT 2015</h1>
+<table border="0" cellpadding="5" cellspacing="3">
+<tr align="left">
+	<th style="width:10%">Loglevel</th>
+	<th style="width:15%">Time</th>
+	<th style="width:75%">Log Message</th>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>**MainPage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>**LoginPage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>**DashboardPage</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>*Driver initialized correctly</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>**Executing Test Case 2</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***clickOnSignOn</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***signInMethod params asdasd - adasd</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>***verifyErrorMessageMethod</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>*Quiting of the driver</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>**sendDataMySqlCustomers</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>*Executing getObjectMysql</td>
+</tr>
+<tr>
+	<td>INFO</td>
+	<td>dic 18,2015 04:26</td>
+	<td>**Conection Successful</td>
+</tr>

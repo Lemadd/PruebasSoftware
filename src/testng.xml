@@ -9,12 +9,14 @@
     <parameter name="browser" value="firefox"></parameter>
     <classes>
       <class name="test.LoginTest"/>
+      <class name="test.AddNewsTest"/>
     </classes>
   </test> <!-- Test -->
+  <!--
   <test name="LoginChrome">
     <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="test.LoginTest"/>
     </classes>
-  </test> <!-- Test -->
+  </test>  Test -->
 </suite> <!-- Suite -->
